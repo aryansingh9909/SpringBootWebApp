@@ -1,35 +1,50 @@
 <html>
 <head>
-<style>
-code {
-  font-family: Consolas,"courier new";
-  color: crimson;
-  background-color: #f1f1f1;
-  padding: 2px;
-  font-size: 105%;
-}
-</style>
+<link rel="stylesheet" href="index.css">
 </head>
 <body>
-
-<form>
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname"><br>
-  
-  <input type="radio" id="male" name="gender" value="male">
-  <label for="male">Male</label><br>
-  <input type="radio" id="female" name="gender" value="female">
-  <label for="female">Female</label><br>
-  <input type="radio" id="other" name="gender" value="other">
-  <label for="other">Other</label><br>
-
-  <label for="birthday">Birthday:</label>
-  <input type="date" id="birthday" name="birthday"><br>
-
-  <input type="submit" value="Submit">
-</form>
-
+<div class="container">
+  <form >
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Gender</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="australia">Male</option>
+          <option value="canada">Female</option>
+          <option value="usa">Others</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Birthday</label>
+      </div>
+      <div class="col-75">
+         <input type="date" id="birthday" name="birthday">
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
 </body>
 </html>
