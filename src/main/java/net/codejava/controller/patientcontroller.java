@@ -35,11 +35,7 @@ public class patientcontroller {
         return "redirect:/patient/searchlist";
     }
 
-    @RequestMapping({"/patient/searchlist", "/patient"})
-    public String listProducts(Model model){
-        model.addAttribute("products", patientservice1.listAll());
-        return "patient/searchlist";
-    }
+    
 
     @RequestMapping("/patient/search/{id}")
     public String getProduct(@PathVariable String id, Model model){
