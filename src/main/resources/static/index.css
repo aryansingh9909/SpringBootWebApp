@@ -91,8 +91,12 @@ input[type=search] {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
   cursor: pointer;
+
+  width:100px;
+  margin:0 50%;
+  position:relative;
+  left:-50px
 }
 
 .button1 {background-color: #4CAF50;
