@@ -2,17 +2,17 @@ package net.codejava.command;
 
 
 public class patientform {
-    private int id;
+    private String id;
     private String firstname;
     private String lastname;
     private String Gender;
     private int birthyear;
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
